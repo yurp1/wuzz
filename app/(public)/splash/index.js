@@ -26,16 +26,14 @@ export default function Splash() {
       style={styles.container}
       resizeMode="cover"
     >
-      {/* Logo (opsional, kalau mau tetap di tengah) */}
       <Image
         source={require('../../../assets/logo-wuzz.png')}
         style={styles.logo}
         resizeMode="contain"
       />
 
-      {/* Text 10% dari bawah */}
       <View style={styles.textContainer}>
-        <Text style={styles.title}>wuzz</Text>
+        <Text style={styles.title}>WuZZ</Text>
         <Text style={styles.subtitle}>
           mau healing ? wuzz aja dulu
         </Text>
@@ -58,21 +56,23 @@ const styles = StyleSheet.create({
 
   textContainer: {
     position: 'absolute',
-    bottom: '10%', // 🎯 10% dari bawah layar
+    bottom: '10%',
     width: '100%',
     alignItems: 'center',
   },
 
   title: {
     fontFamily: 'ArchivoBlack',
-    fontSize: 42,
-    color: '#FFFFFF',
-    letterSpacing: 1,
+    fontSize: 48,
+    color: '#000000',
+    letterSpacing: 1.2,
   },
 
   subtitle: {
     marginTop: 6,
-    fontSize: 14,
-    color: '#E5E7EB',
+    fontSize: 15,
+    color: '#FFFFFF',
+    fontWeight: '700',
+    opacity: 0.9,
   },
 });
